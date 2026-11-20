@@ -9,7 +9,7 @@
   "scripts": {
     "start": "electron .",
     "prep": "node scripts/prep.js",
-    "dist": "npm run prep && electron-builder --win nsis --publish never"
+    "dist": "npm run prep && electron-builder --win nsis --ia32 --x64 --publish never"
   },
   "dependencies": {
     "sql.js": "1.8.0"
@@ -58,7 +58,7 @@
       "deleteAppDataOnUninstall": false,
       "installerIcon": "build/icon.ico",
       "uninstallerIcon": "build/icon.ico",
-      "artifactName": "MadrasehYar-Setup-${version}.exe"
+      "artifactName": "MadrasehYar-Setup-${arch} -${version}.exe"
     }
   }
 }
