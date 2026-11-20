@@ -9,7 +9,7 @@
   "scripts": {
     "start": "electron .",
     "prep": "node scripts/prep.js",
-    "dist": "npm run prep && electron-builder --win nsis --ia32 --x64 --publish never"
+    "dist": "npm run prep && electron-builder --win nsis --ia32 --publish never"
   },
   "dependencies": {
     "sql.js": "1.8.0"
